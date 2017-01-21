@@ -1,0 +1,714 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/*-----------------Nav Bar Styling------------------*/
+.navbar-header{
+    padding-left:3%;
+}
+#Nav_Home_Link{
+    display:block;
+    border-left:4px solid #000;
+    color:#fff;
+}
+#Nav_Home_Link:hover{
+    background:#0d0d0d;
+}
+#myNavbar{
+    padding-left:4%;
+    text-align:center;
+}
+h4{
+    display:inline;
+}
+/*-----------------Footer Styling------------------*/
+.Footer-Sticky{
+    position:fixed;
+    bottom:0;
+    right:15%;
+    overflow:hidden;
+    background:#fff;
+    display:block;
+    width:240px;
+    height:28px;
+    border:1px solid #000;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom:none;
+}
+.Footer-Sticky-Text{
+    display:inline;
+    line-height:26px;
+    font-size:14px;
+    font-weight:600;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+.Footer-Full{
+    position:relative;
+    bottom:0;
+    overflow:hidden;
+    background:#fff;
+    display:block;
+    width:100%;
+    height:60px;
+    border-radius:0;
+    text-align:center;
+    left:0;
+    }
+.Footer-Full-Text{
+    font-size:20px;
+    line-height:55px;
+    padding-bottom:1%;
+    color:#4d4d4d;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight:600;
+}
+/*-----------------Index Page Styling------------------*/
+.formContent{
+    min-height:110vh;
+    width:100%;
+    margin-top:50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:16px;
+    font-weight:600;
+}
+
+.tables{
+    width:80%;
+    min-height:110vh;
+    margin:auto;
+    margin-top:53px;
+    display:flex;
+    border:2px solid #333333;
+    border-radius:5px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.Login-Table, .Signup-Table{
+    margin:auto;
+    margin-top:20vh;
+    border:2px solid #333333;
+    border-radius:10px;
+    text-align:center;
+    width:400px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.Signup-Table{
+    margin-bottom:20vh;
+}
+.Row{
+    margin:auto;
+    display:block;
+    width:100%;
+    min-height:40px;
+    text-align:center;
+}
+
+.Col-1{
+    text-align:right;
+    padding-right:0;
+}
+
+.username_Text{
+    font-size:15px;
+}
+.textBox{
+    width:100%;
+    height:25px;
+    padding-left:5px;
+    font-size:15px;
+    border:2px solid #333333;
+    border-radius:5px;
+    background:none;
+}
+.Button{
+    background:#4d4d4d;
+    border:2px solid white;
+    border-radius:5px;
+    color:white;
+    padding:5px 8px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:16px;
+    font-weight:500;
+}
+.Button:hover{
+    border:2px solid #000;
+    background:#000;
+}
+.Account_Button{
+    background:transparent;
+    border:none;
+    color:#4775d1;
+}
+.loginDiv_Heading{
+    font-style:normal;
+    font-size:25px;
+}
+.WarningLabel{
+    color:#b30000;
+    padding-top:15px;
+    line-height:25px;
+}
+.Active-Login-Table{
+    display:none;
+    margin:auto;
+    margin-top:20vh;
+    width:60vh;
+    padding:20px 15px;
+    text-align:center;
+}
+/*------------Page 2 Style-----------*/
+.Page-2-Tables{
+     flex-direction:column;
+     padding:0;
+}
+.sticky_Div{
+    position:fixed;
+    top:52px;
+}
+.sticky_Div_Container{
+    display:block;
+    width:25%;
+    height:30px;
+    margin:auto;
+}
+.Products-Div{
+    width:100%;
+    margin:0;
+}
+
+.Login-Status-Label{
+    line-height:60px;
+}
+.Status-Div{
+     text-align:center;
+     border-bottom:2px solid Black;
+     width:100%;
+     height:60px;
+}
+
+.StatusLabel_Name{
+    display:inline;
+    color:#000;
+}
+#logout_Button{
+    width:100px;
+    margin:auto;
+}
+.login_Status_Black{
+    text-align:center;
+    margin:auto;
+    height:auto;
+    margin-top:20%;
+}
+#login_Status_Black_Text{
+    color:#333;
+    margin:auto;
+}
+/*----------------Dropdown menu---------------*/
+.Dropdown-Menu{
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid black;
+    width:100%;
+}
+.dropdown-button{
+    width:50px;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 99%;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover {
+    visibility: visible;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/*------------------Products Styling----------------*/
+.Products-Table-Row{
+    width:100%;
+    margin:auto;
+    padding-top:5vh;
+    padding-bottom:3vh;
+    box-shadow: 0px 24px 3px -24px black;
+}
+.Item-Title-Text{
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    display:inline;
+    font-size:30px;
+    font-weight:600;
+    line-height:40px;
+}
+.Item-Price-Div{
+    height:45px;
+    margin-top:40px; 
+}
+.Item-Amount-Text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    margin-bottom:auto;
+    padding-left:8px;
+    line-height:40px;
+    color:black;
+    display:inline;
+}
+.Item-Price-Text{
+    display:inline;
+    background:none;
+    margin-bottom:0;
+    font-family: 'Oswald', sans-serif;
+    color:green;
+    font-size:30px;
+    line-height:40px;
+}
+.dollar-icon{
+    color:green;
+    font-size:26px;
+    font-weight:600;
+}
+.Item-Info-Text{
+    margin-top:5px;
+    font-weight:500;
+}
+.Product-Img-Link{
+    display:block;
+    width:260px;
+    height:260px;
+    margin-left:30%;
+    overflow: hidden;
+    border:1px solid black;
+    border-radius:4px;
+}
+.product_Img{
+    width:260px;
+    height:260px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.product_Img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+
+.btn-custom{
+    background-color:#333333;
+    border:1px solid #d9d9d9;
+    border-radius:8px;
+}
+
+.btn-custom:hover{
+    background-color:#0d0d0d;
+    border:1px solid black;
+}
+.Item_Labels{
+    height:60px;
+    width:100%;
+    display:block;
+    line-height:40px;
+}
+
+.itemExists_Text{
+    color:#cc0000;
+}
+.Page-2-Source-Info{
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-weight:600;
+}
+/*-----------------Modal Styling-----------------*/
+.modal-title{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align:center;
+    font-weight:600;
+}
+.Modal-Img{
+    height:100%;
+    width:100%;
+    margin-right:1%;
+    border:2px solid black;
+    border-radius:6px;
+}
+.Modal-Text{
+   font-size:17px;
+   display:inline;
+}
+.Modal-Close{
+    font-size:50px;
+}
+.Modal-Info-Heading{
+    display:inline;
+    font-size:22px;
+}
+.Source-Text{
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-weight:600;
+    margin-left:10%;
+}
+/*-----------------My Items Page Styling-----------------*/
+.Fav-Products-Table{
+    padding-top:3%;
+    padding-bottom:0;
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+    border-bottom:1px solid gray;
+    margin: 0 auto;
+}
+.Fav-Img-Link{
+    display:block;
+    height:220px;
+    width:220px;
+    margin-left:30%;
+    overflow: hidden;
+    border:1px solid black;
+    border-radius:4px;
+}
+.Fav_Img{
+    height:220px;
+    width:220px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.Fav_Img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+.Fav-Item-Price-Div{
+    display:inline;
+    background:none;
+    font-family: 'Oswald', sans-serif;
+    color:green;
+    font-size:26px;
+    line-height:40px;
+}
+.Fav-Item-Price-Text{
+    display:inline;
+    background:none;
+    font-family: 'Oswald', sans-serif;
+    color:green;
+    font-size:23px;
+    line-height:40px;
+}
+.Fav-Item-Title-Text{
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    display:inline;
+    font-size:26px;
+    font-weight:600;
+    line-height:40px;
+}
+.Item-Amount-Text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    margin-bottom:auto;
+    padding-left:8px;
+    line-height:40px;
+    color:black;
+    display:inline;
+}
+.fav-dollar-icon{
+    color:green;
+    font-size:20px;
+    font-weight:600;
+}
+.Fav_Item_Labels{
+    display:block;
+    margin:auto;
+    height:50px;
+    line-height:30px;
+}
+.Fav-Item-Info-Text{
+    margin-top:5px;
+    font-weight:500;
+    line-height:30px;
+}
+/*----------------Cart Page Styling-----------------*/
+.Cart-Div{
+    width:100%;
+}
+.Cart-Table-Row{
+    width:100%;
+    margin:auto;
+    margin-top:4%;
+    padding-bottom:3%;
+    box-shadow: 0px 90px 3px -90px black;
+}
+.Cart_Img{
+    display:block;
+    height:150px;
+    width:150px;
+    margin-left:auto;
+    overflow: hidden;
+    border:1px solid black;
+    border-radius:4px;
+}
+.Cart-Link{
+    color:#333333;
+    text-decoration:none;
+}
+.Cart-Link:hover{
+    color:#23527c;
+}
+.Cart-Button-Div{
+    height:140px;
+}
+.Cart-Button{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-top:6px;
+    height:36px;
+    width:36px;
+    color:#4d4d4d;
+    font-size:28px;
+    line-height:30px;
+    font-weight:500;
+    text-align:center;
+    background:none;
+    border: 2px solid #b3b3b3;
+    border-radius:10px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.Cart-Button:hover{
+    color:#000;
+    border-color: #4d4d4d;
+}
+.Hidden_Button{
+    margin:auto;
+    display:none;
+    background:#fff;
+    color:#333;
+    padding:5px 8px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:16px;
+    font-weight:500;
+    border: 2px solid #b3b3b3;
+    border-radius:6px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.Hidden_Button:hover{
+    background:#333;
+    color:#fff;
+}
+
+.Cart_Label{
+    width:100%;
+    display:block;
+    line-height:40px;
+    color:#cc0000;
+}
+
+.Quantity-Text{
+    line-height:50px;
+}
+.Select-List{
+    display:inline;
+    width:45px;
+    padding-left:2px;
+    padding-right:2px;
+}
+.Cart-Item-Price-Div{
+    display:inline-block;
+    background:none;
+    line-height:50px;
+}
+.Cart-Item-Price-Text{
+    display:inline;
+    background:none;
+    font-family: 'Oswald', sans-serif;
+    color:green;
+    font-size:23px; 
+}
+.cart-button-div{
+    text-align:center;
+}
+.cart-btn{
+
+}
+/*------------- Small screen devices --------------*/
+@media (max-width: 1168px) {
+    .tables {
+        margin-top:53px;
+        width: 98%;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .Login-Table,.Signup-Table {
+        margin-top:8vh;
+    }
+    .Signup-Table{
+        margin-bottom: 20vh;
+    }
+    .Row{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    .Col-1{
+        width:30%;
+        margin:auto;
+    }
+    
+    .Col-2{
+        width:70%;
+        margin:auto;
+    }
+    .Product-Img-Link{
+    margin:auto;
+    }
+    .Products-Col{
+     padding:0;
+    }
+}
+/*------------- tablets --------------*/
+@media (max-width: 767px) {
+    .navbar-header{
+        padding-right:0;
+    }
+
+    .tables {
+        border:none;
+        border-bottom:2px solid #333;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .Login-Table, .Signup-Table {
+        margin-top: 10vh;
+        width:90%;
+    }
+    .Row-Border{
+        border-bottom:1px solid gray;
+    }
+    
+    .Col-2{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .btn-custom{
+    margin-top:4px;
+    margin-bottom:4px;
+    }
+    .Item-Info-Text{
+    margin-top:0;
+    font-weight:500;
+    }
+    .Item_Labels{
+    margin:auto;
+    height:30px;
+    width:100%;
+    display:block;
+    }
+    .Products-Table-Row{
+    box-shadow: 0px 5px 3px -5px black;
+    }
+    .Item-Title-Text{
+    display:inline;
+    font-size:20px;
+    line-height:40px;
+    }
+    .Item-Info-Text{
+    font-size:17px;
+    line-height:19px;
+    }
+    .Cart-Table-Row{
+        box-shadow: 0px 5px 3px -5px black;
+        padding-bottom:5%;
+    }
+    .footer{
+    position:relative;
+    bottom:0;
+    overflow:hidden;
+    background:#fff;
+    display:block;
+    width:100%;
+    height:40px;
+    border-top:1px solid gray;
+    border-radius:0;
+    text-align:center;
+    left:0;
+    }
+    .Footer-Text{
+        line-height:40px;
+    }
+    .Footer-Sticky{
+        display:none;
+    }
+    
+.Cart_Img{
+    height:130px;
+    width:130px;
+    margin:auto;
+}
+.Cart-Button-Div{
+    height:auto;
+}
+.Cart-Button{
+    display:none;
+}
+    .Hidden_Button {
+        display:block;
+    }
+
+.Cart_Label{
+    width:100%;
+    display:block;
+    line-height:30px;
+    color:#cc0000;
+    }
+
+}
+
+/*------------- Mobile devices --------------*/
+@media (max-width: 420px) {
+    .navbar-header{
+       min-width:300px;
+}
+    .tables {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom:10vh;
+    }
+
+    .Login-Table, .Signup-Table {
+        margin: auto;
+        margin-top: 10vh;
+    }
+    .Product-Img-Link,.Fav-Img-Link{
+        margin:auto;
+     }
+    .Row{
+        margin:auto;
+        padding-right:5px;
+    }
+    .Col-1{
+        text-align:left;
+        padding-left:0;
+        padding-right:10px;
+    }
+    .Col-2{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .username_Text{
+        font-size:14px;
+    }
+    .Cart_Label{
+        text-align:center;
+    }
+}
