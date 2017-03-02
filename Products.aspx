@@ -7,6 +7,7 @@
     <meta charset="utf-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Products</title>
+	<link rel="shortcut icon" href="img/logo.png" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/StyleSheet.css" type="text/css" />
     <script src="jquery/jquery-3.1.1.min.js" type="text/javascript"></script>

@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
+using System.IO;
+using System.Text;
 
 public class Connect_MYSQL
 {
     private MySqlConnection connection;
     private MySqlConnectionStringBuilder conn = new MySqlConnectionStringBuilder();
+    StreamWriter sw;
 
     public Connect_MYSQL()
     {
@@ -17,7 +18,6 @@ public class Connect_MYSQL
         conn.UserID = "chahal";
         conn.Password = "Cc7653207";
         conn.Database = "liquorstoredb";
-
         connection = new MySqlConnection(conn.ToString());
     }
     private bool OpenConnection()
@@ -33,10 +33,18 @@ public class Connect_MYSQL
             switch (ex.Number)
             {
                 case 0:
+                    sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                    sw.WriteLine("Cannot connect to server.  Contact administrator");
+                    sw.Flush();
+                    sw.Close();
                     Debug.WriteLine("Cannot connect to server.  Contact administrator");
                     break;
 
                 case 1045:
+                    sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                    sw.WriteLine("Invalid username/password, please try again");
+                    sw.Flush();
+                    sw.Close();
                     Debug.WriteLine("Invalid username/password, please try again");
                     break;
             }
@@ -52,7 +60,11 @@ public class Connect_MYSQL
         }
         catch (MySqlException ex)
         {
-            Debug.WriteLine(ex.Message);
+            sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+            sw.WriteLine(ex.Message);
+            sw.Flush();
+            sw.Close();
+            Debug.Write(ex);
             return false;
         }
     }
@@ -70,6 +82,10 @@ public class Connect_MYSQL
             }
             catch (Exception signup)
             {
+                sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                sw.WriteLine(signup.Message);
+                sw.Flush();
+                sw.Close();
                 Debug.Write(signup);
             }
             this.CloseConnection(); 
@@ -102,6 +118,10 @@ public class Connect_MYSQL
             }
             catch (Exception readError)
             {
+                sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                sw.WriteLine(readError.Message);
+                sw.Flush();
+                sw.Close();
                 Debug.Write(readError);
             }
             
@@ -134,7 +154,10 @@ public class Connect_MYSQL
 
             catch (Exception e)
             {
-
+                sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                sw.WriteLine(e.Message);
+                sw.Flush();
+                sw.Close(); 
                 Debug.Write(e);
             }
 
@@ -177,6 +200,10 @@ public class Connect_MYSQL
             }
             catch (Exception item)
             {
+                sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                sw.WriteLine(item.Message);
+                sw.Flush();
+                sw.Close();
                 Debug.Write(item);
             }
             this.CloseConnection();
@@ -196,6 +223,10 @@ public class Connect_MYSQL
             }
             catch (Exception r)
             {
+                sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory+"\\App_Code\\log.txt", true);
+                sw.WriteLine(r.Message);
+                sw.Flush();
+                sw.Close();
                 Debug.Write(r);
             }
             this.CloseConnection();
